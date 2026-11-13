@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://helixoriginator.github.io/asia-book-of-records-grandmaster-2025/sitemap.xml
