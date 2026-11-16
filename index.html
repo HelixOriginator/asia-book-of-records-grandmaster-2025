@@ -367,6 +367,54 @@
       background: rgba(30, 41, 59, 0.95);
     }
 
+    /* Policy Framework Feature Card (added) */
+    .framework-card {
+      background: linear-gradient(135deg, #1a1830 0%, #131b2e 100%);
+      border: 1px solid rgba(167, 139, 250, 0.38);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .framework-card:hover {
+      transform: translateY(-2px);
+      border-color: #a78bfa;
+    }
+
+    .tag-framework {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #c4b5fd;
+      background: rgba(167, 139, 250, 0.15);
+      border: 1px solid rgba(167, 139, 250, 0.35);
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
+    }
+
+    .btn-violet {
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.32);
+    }
+
+    .btn-violet:hover {
+      background: linear-gradient(135deg, #6d28d9, #c4b5fd);
+      transform: translateY(-1px);
+    }
+
+    .framework-card h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
     /* Footer */
     footer {
       text-align: center;
@@ -536,6 +584,20 @@
         </div>
       </article>
 
+    </section>
+
+    <!-- Universal Economic Equity Framework (added) -->
+    <div class="section-title"><span class="dot"></span> Public Policy Research & Reform Proposal</div>
+    <section class="framework-card">
+      <div class="featured-header">
+        <span class="tag-framework">Open Policy Whitepaper • Economic Equity Framework</span>
+        <a href="https://helixoriginator.github.io/universal-economic-equity-framework/" target="_blank" rel="noopener noreferrer" class="btn btn-violet">
+          Explore the Universal Economic Equity Framework →
+        </a>
+      </div>
+      <p class="two-line-summary">
+        Novel in proposing a single community-blind Economic Vulnerability Index (EVI) that ties scholarships and welfare yojanas to verified household need, with automatic "creamy layer" graduation so benefits rotate to families still in poverty. It pairs the proposal with an interactive simulator that lets readers test how the model would treat any household.
+      </p>
     </section>
 
     <!-- Footer -->
