@@ -24,6 +24,8 @@
       --cyan-glow: rgba(56, 189, 248, 0.15);
       --emerald: #10b981;
       --emerald-glow: rgba(16, 185, 129, 0.16);
+      --crimson: #a51c30;
+      --crimson-glow: rgba(165, 28, 48, 0.22);
     }
 
     * {
@@ -415,6 +417,49 @@
       color: var(--text-primary);
     }
 
+    /* ===== NEW: HarvardX Certificate Card & Highlighted Button ===== */
+    .badge-crimson {
+      color: #fda4af;
+      background: var(--crimson-glow);
+      border: 1px solid rgba(165, 28, 48, 0.45);
+    }
+
+    .doc-card.harvard {
+      background: linear-gradient(135deg, #2a1220 0%, #131b2e 100%);
+      border: 1px solid rgba(165, 28, 48, 0.45);
+      margin-bottom: 2.5rem;
+    }
+
+    .doc-card.harvard:hover {
+      border-color: #a51c30;
+      background: linear-gradient(135deg, #331627 0%, #1a2338 100%);
+    }
+
+    .btn-harvard {
+      background: linear-gradient(135deg, #7f1d2d, #a51c30);
+      color: #ffffff;
+      flex: 1;
+      animation: harvardPulse 2.2s ease-in-out infinite;
+    }
+
+    .btn-harvard:hover {
+      background: linear-gradient(135deg, #a51c30, #c9364c);
+      transform: translateY(-1px);
+    }
+
+    @keyframes harvardPulse {
+      0%, 100% { box-shadow: 0 0 12px rgba(165, 28, 48, 0.45); }
+      50% { box-shadow: 0 0 28px rgba(165, 28, 48, 0.9); }
+    }
+
+    .harvard-cert-id {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+      word-break: break-all;
+    }
+    /* ===== END NEW ===== */
+
     /* Footer */
     footer {
       text-align: center;
@@ -585,6 +630,25 @@
       </article>
 
     </section>
+
+    <!-- ===== NEW: HarvardX Verified Certificate Section ===== -->
+    <div class="section-title"><span class="dot"></span> Verified Academic Credential</div>
+    <section class="doc-card harvard">
+      <div>
+        <span class="card-badge badge-crimson">HarvardX • Verified Certificate • Issued September 29, 2024</span>
+        <h2>Rhetoric: The Art of Persuasive Writing and Public Speaking (AESTHINT15)</h2>
+        <p class="one-line-summary">
+          Successfully completed with a passing grade in Harvard University's online rhetoric course — certifying the persuasive-writing and public-speaking craft that underpins his open-science advocacy and policy communication.
+        </p>
+        <p class="harvard-cert-id">Valid Certificate ID: 6a146d6106764681ac5fff4f054d5ff1 • Signed by James Engell, Gurney Professor of English and Professor of Comparative Literature, Harvard University</p>
+      </div>
+      <div class="btn-group">
+        <a href="Harvard.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-harvard">
+          📜 View HarvardX Certificate (PDF)
+        </a>
+      </div>
+    </section>
+    <!-- ===== END NEW ===== -->
 
     <!-- Universal Economic Equity Framework (added) -->
     <div class="section-title"><span class="dot"></span> Public Policy Research & Reform Proposal</div>
